@@ -20,9 +20,9 @@ Housing_Inventory %>%
 
 Housing_Inventory %>%
   ggplot(aes(x = YEAR)) +
-  geom_bar() +
+  geom_bar(fill = "light blue", color = "blue") +
   labs(y = "Housing Units") +
   labs(x = "Year") +
-  ggtitle("Housing Units Built Per Year in SF")
+  ggtitle("Housing Units Built Per Year in SF") 
 
 ggsave("data/documentation/number_of_housing_units_per_year_SF.pdf")
