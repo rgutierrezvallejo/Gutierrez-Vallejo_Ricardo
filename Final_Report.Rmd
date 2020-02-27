@@ -1,6 +1,6 @@
 ---
 title: "Final Report"
-author: "Don Francisco"
+author: "Ricardo Gutierrez-Vallejo"
 date: "February 10, 2020"
 bibliography: references.bib
 csl: ecology.csl
@@ -13,7 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-Delete this placeholder text, and replace it with your introduction text.
+Urban planning plays an important role in ecosystem structure for local organisms and can even have cascading effects on human lifestyles. Urban planners utilize their knowledge of the environment and infrastrcture to design how cities be organized to utlimately benefit the individuals that interact with these structures on a daily basis. Ecologist for some time have attempted to integrate some theories into the field of urban planning, but not many have succeeded. Niemelä describes a three step process for successful integration, which includes a more methodical approach to urban planning resulting in improved conservation efforts [@niemela1999ecology]. 
+
+Aside from conservation, urban planning also plays an important role in terms of environmental health of a region. Disorganized urban planning can result in a combination of heavy air polluting facilties in close proximity of one another and have cascading effects on individuals living in the area. In a paper on environmental justice, Paul Mohai notes that there are socioeconomic effects of poor urban planning, indicating that some minority commmunities were often common sites for new waste facilities [@mohai2009environmental]. These social concerns led to many questions about the environmental conditions in which some minority communities have been forced into. Urban planning could be a potential route to resolving these potential racial issues, but no research has concretely demonstrated that poorer or disadvatnaged communities live in areas with unhealthy environmental conditions. A study relating to air quality in Los Angeles reveal that 
 
 # Methods
 
