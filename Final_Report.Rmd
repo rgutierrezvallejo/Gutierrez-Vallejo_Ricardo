@@ -13,25 +13,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-Urban planning plays an important role in establishing ecosystem structure for local organisms and can even have cascading effects on human lifestyles. Urban planners utilize their knowledge of the environment and infrastructure to design how cities can be organized to ultimately benefit the individuals that interact with these structures on a daily basis. Ecologist for some time have attempted to integrate theory into the field of urban planning, but not much progress has been made to date. Niemelä describes a three step process for successful integration, which includes a more methodical approach to urban planning resulting in improved conservation efforts [@niemela1999ecology]. By doing something as simple as going through a checklist, local environments can produce benefits for wildlife and humans. The benefits of these techniques span from improving human lifestyle, these also benefit global health in the form of reducing pollutants in various high density areas. To further demonstrate the effect of air toxics, a comparison performed across six U.S. cities depicted that areas with higher levels of toxic compounds can often lead to an increased susceptibility to cardiovascular events [@suwa2002particulate].
+Urban planning plays an important role in establishing ecosystem structure for local organisms and can even have cascading effects on human lifestyles. Urban planners utilize their knowledge of the environment and infrastructure to design how cities can be organized to ultimately benefit the individuals that interact with these structures on a daily basis. Ecologist for some time have attempted to integrate theory into the field of urban planning, but not much progress has been made to date. Niemelä describes a three step process for successful integration, which includes a more methodical approach to urban planning resulting in improved conservation efforts [@niemela1999ecology]. By doing something as simple as going through a checklist, local environments can produce benefits for wildlife and humans. The advantages of these techniques span from improving human lifestyle, to increasing global health in the form of reducing pollutants in various high density areas. To further demonstrate the effect of air toxics, a comparison performed across six U.S. cities depicted that areas with higher levels of toxic compounds often lead to an increased susceptibility to cardiovascular events [@suwa2002particulate]. Cardiovascular events have the potential to lower the overall health and life expectancy of individuals present in effected communities. Studies around these issues have revealed that regions with even the smallest decrease in air pollution can lead to an increase in around half a year of life [@pope2009fine]. 
 
-Aside from conservation and global health, urban planning also plays an important role in terms of environmental health of a region. Disorganized urban planning can result in a combination of heavily polluting facilities in close proximity of one another as demonstrated above. This in turn can have cascading effects on individuals living in the area. Due to this, individuals living in areas of cheap and accessible land for waste facilities often endure consequences of pollution. In a paper on environmental justice, Paul Mohai notes that there are socioeconomic effects of poor urban planning, indicating that some minority communities were often common sites for new waste facilities [@mohai2009environmental]. These social concerns led to many questions about the environmental conditions in which some minority communities have been forced into. Urban planning could be a potential route to resolving these potential racial issues, but no research has concretely demonstrated that poorer or disadvantaged communities live in areas with unhealthy environmental conditions. A journal article published a study using zip codes as areas of interests and demonstrated that race proved to be a critical variable when determining the location of waste facilities [@cutter1995race]. Along with this, researchers have often found that either race or socioeconomic status plays a role in the health and cleanliness of a community. 
+Similar to human health effects entire ecosystems can face the detrimental effects of anthropogenic pollution. Urban planning plays an important role in terms of environmental health of a region and the socioeconomic effects on humans. Disorganized urban planning can result in a combination of heavily polluting facilities, which in-turn can lead to an increased prevalence of various diseases. Due to this, individuals living in areas of cheap and accessible land for waste facilities often endure the heavier consequences of pollution. In a paper on environmental justice, Paul Mohai notes that there are socioeconomic effects of poor urban planning, indicating that some minority communities were often common sites for new waste facilities [@mohai2009environmental]. These social concerns led to many questions about the environmental conditions under which some minority communities have been forced into. Urban planning could be a route to resolving these potentially racial issues, but no research has concretely demonstrated that poorer or disadvantaged communities tend to be sites of low environmental health conditions. A journal article published a study using zip codes as areas of interests and demonstrated that race proved to be a critical variable, but not the definitive variable, when determining the location of waste facilities [@cutter1995race]. Along with this, researchers have often found that either race or socioeconomic status plays a role in the health and cleanliness of a community indicating that though other variables may have an infleunce, race seems to be the key to differences in pollution.
 
-One of the many pollutants in disadvantaged communities is the presence of chemical toxins generated by waste facilities, factories, and vehicles. A study of roadside metal contaminants performed in Shanghai, China identified that some toxic metals have potential to become "chemical time bombs" which could alter the urban ecosystem structure and eventually effect human health and safety [@shi2008potentially]. Occurrences similar to this have become common place around the world regardless of socioeconomic status. The prominent issue stemming from this is that socioeconomically disadvantaged individuals have a much harder time avoiding the negative effects of pollution. Researchers have argued that through the accumulation of property and governmental influence, privileged Americans have constructed a hierarchy of status based on race and class [@hurley1995environmental]. These barriers to economic ascension have enhanced the issue of ecological deterioration as the disadvantaged become more disadvantaged. 
+One of the many pollutants in disadvantaged communities is the presence of chemical toxins generated by waste facilities, factories, and vehicles. A study of roadside metal contaminants performed in Shanghai, China identified that some toxic metals have potential to become "chemical time bombs" which could alter the urban ecosystem structure and eventually effect human health and safety [@shi2008potentially]. Occurrences similar to this, wherein individuals are affected due to a collective polluting effort have become commonplace around the world regardless of socioeconomic status. The prominent issue stemming from this is that socioeconomically disadvantaged individuals have a much harder time avoiding the negative effects of pollution. Researchers have argued that through the accumulation of property and governmental influence, privileged Americans have constructed a hierarchy of status based on race and class [@hurley1995environmental]. These barriers to economic ascension have enhanced the issue of ecological deterioration as the disadvantaged become more disadvantaged. 
 
-To further investigate the relationship between race and economic status and environmental health, I proposed a study involving the quantification of environmental pollutants in the Marina, Tenderloin, and Richmond districts of San Francisco. In this report, I specifically looked at the number of chemicals, classified as toxic, and whether these play a role in the decreased presence of green life density in selected areas of San Francisco. Based on previous research performed in similar situations, I predicted that areas with a greater density of toxic pollutants will have fewer trees above 6 feet tall per block of measurement because of the limited ability of plants to establish under harsh air conditions. 
+There are many San Francisco specific issues that arise when looking at urban ecology. The focus of this study tackles the amount of trees in the prominent regions of the city previously mentioned. A study on tree cover across 20 cities in the U.S. demostrated that 17 of these cities had a significant derease in tree cover, indicating not only a decrease in lumber resources for people, but a reduction in biodiversity in these cities as well [@nowak2012tree]. Decreases in tree density in metropolitan areas has been identified as a common occurence worldwide for sometime now, with various researchers arguing different perspectives as to why conservation is important. In this research study, conservation of all trees is important becasue of the benefits that trees provide in terms of air pollution. Furthermore, access to green spaces across the world has become an environmental justice issue. Studies have analyzed the realtionship between green space creation and neighborhood health and have determined that although green spaces are beneficial they can be counterproductive and increase housing costs or property values [@wolch2014urban].    
+
+To further investigate the relationship between economic status and environmental health, I proposed a study involving the quantification of environmental pollutants in the various governmental departments of San Francisco. In this report, I specifically looked at the emissions of various chemicals, classified as toxic (according to the Agency for Toxic Substances and Disease Registry), and whether these play a role in the decreased presence of green life density in selected areas of San Francisco. Recent studies on the nature of modern urban planning have identified that urban densification processes, like consolidation and infill development, have a large influence in the potential green space available or created later on [@haaland2015challenges]. Based on previous research performed in similar situations, I predicted that areas with a greater density of toxic pollutants will have fewer trees because of the limited ability of plants to establish under harsh (or more toxic) air conditions. To properly assess these questions, I analyzed datasets on housing and demographics found online to identify trends in socioeconomics class in San Francisco. Using this data correlations were found with usages and emissions from the city departments as well as some data collected in the field on waste. This data revealed interesting information about San Francisco such as ....
 
 # Methods
 
-Add text here.
+Data from this report was colleected from various online databases. 
 
-## Site Locations and Descriptions
+## Field Methods
 
-Add text here.
 
-## Field Sampling Design
-
-Add text here.
 
 ## Data Analysis and Statistics
 
@@ -50,7 +48,45 @@ library("dplyr")
 library("tidyr")
 library("ggplot2")
 library("readr")
+library("broom")
+library("knitr")
+library("lubridate")
 ```
+
+```{r read-in-community-greenhouse-data}
+# read in community greenhouse data from 
+# https://data.sfgov.org/Energy-and-Environment/San-Francisco-Communitywide-Greenhouse-Gas-Invento/btm4-e4ak
+
+community_data <- read_csv(
+  "data/raw_data/San_Francisco_Communitywide_Greenhouse_Gas_Inventory.csv")
+
+```
+
+```{r make-bar-graph-of-commodity-and-normal-emission-data}
+# want to know relationship between the emission of CO2 and the commodity 
+# type
+community_data %>%
+  filter(Sector_GPC == "Stationary") %>%
+  group_by(Commodity_Type) %>%
+  count() %>%
+  arrange(desc(n))
+
+community_data %>%
+group_by(Commodity_Type) %>%
+  summarize(mean_emission = mean(Emissions_mtCO2e, na.rm = TRUE)) %>%
+  ggplot(aes(x = reorder(Commodity_Type, mean_emission), y = mean_emission)) +
+  geom_col(fill = "navy blue", size = 1) +
+  coord_flip() +
+  labs( x = "Commodity Type", y = "Mean Emission of CO2") +
+  ggtitle("Commodity Type", "In San Francisco City Government") +
+  theme_grey(base_line_size = 1) +
+  remove(B5)
+
+# still to do: go back and see if you can color parts of each column according 
+# to  
+
+```
+
 
 # Discussion
 
