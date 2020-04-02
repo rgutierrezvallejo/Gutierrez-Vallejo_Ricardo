@@ -8,28 +8,51 @@ output: word_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      error = FALSE,
+                      warning = FALSE)
 ```
 
 # Introduction
 
 Urban planning plays an important role in establishing ecosystem structure for local organisms and can even have cascading effects on human lifestyles. Urban planners utilize their knowledge of the environment and infrastructure to design how cities can be organized to ultimately benefit the individuals that interact with these structures on a daily basis. Ecologist for some time have attempted to integrate theory into the field of urban planning, but not much progress has been made to date. Niemelä describes a three step process for successful integration, which includes a more methodical approach to urban planning resulting in improved conservation efforts [@niemela1999ecology]. By doing something as simple as going through a checklist, local environments can produce benefits for wildlife and humans. The advantages of these techniques span from improving human lifestyle, to increasing global health in the form of reducing pollutants in various high density areas. To further demonstrate the effect of air toxics, a comparison performed across six U.S. cities depicted that areas with higher levels of toxic compounds often lead to an increased susceptibility to cardiovascular events [@suwa2002particulate]. Cardiovascular events have the potential to lower the overall health and life expectancy of individuals present in effected communities. Studies around these issues have revealed that regions with even the smallest decrease in air pollution can lead to an increase in around half a year of life [@pope2009fine]. 
 
-Similar to human health effects entire ecosystems can face the detrimental effects of anthropogenic pollution. Urban planning plays an important role in terms of environmental health of a region and the socioeconomic effects on humans. Disorganized urban planning can result in a combination of heavily polluting facilities, which in-turn can lead to an increased prevalence of various diseases. Due to this, individuals living in areas of cheap and accessible land for waste facilities often endure the heavier consequences of pollution. In a paper on environmental justice, Paul Mohai notes that there are socioeconomic effects of poor urban planning, indicating that some minority communities were often common sites for new waste facilities [@mohai2009environmental]. These social concerns led to many questions about the environmental conditions under which some minority communities have been forced into. Urban planning could be a route to resolving these potentially racial issues, but no research has concretely demonstrated that poorer or disadvantaged communities tend to be sites of low environmental health conditions. A journal article published a study using zip codes as areas of interests and demonstrated that race proved to be a critical variable, but not the definitive variable, when determining the location of waste facilities [@cutter1995race]. Along with this, researchers have often found that either race or socioeconomic status plays a role in the health and cleanliness of a community indicating that though other variables may have an infleunce, race seems to be the key to differences in pollution.
+Similar to human health effects entire ecosystems can face the detrimental effects of anthropogenic pollution. Urban planning plays an important role in terms of environmental health of a region and the socioeconomic effects on humans. Disorganized urban planning can result in a combination of heavily polluting facilities, which in-turn can lead to an increased prevalence of various diseases. Due to this, individuals living in areas of cheap and accessible land for waste facilities often endure the heavier consequences of pollution. In a paper on environmental justice, Paul Mohai notes that there are socioeconomic effects of poor urban planning, indicating that some minority communities were often common sites for new waste facilities [@mohai2009environmental]. These social concerns led to many questions about the environmental conditions under which some minority communities have been forced into. Urban planning could be a route to resolving these potentially racial issues, but no research has concretely demonstrated that poorer or disadvantaged communities tend to be sites of low environmental health conditions. A journal article published a study using zip codes as areas of interests and demonstrated that race proved to be a critical variable, but not the definitive variable, when determining the location of waste facilities [@cutter1995race]. Along with this, researchers have often found that either race or socioeconomic status plays a role in the health and cleanliness of a community indicating that though other variables may have an influence, race seems to be the key to differences in pollution.
 
 One of the many pollutants in disadvantaged communities is the presence of chemical toxins generated by waste facilities, factories, and vehicles. A study of roadside metal contaminants performed in Shanghai, China identified that some toxic metals have potential to become "chemical time bombs" which could alter the urban ecosystem structure and eventually effect human health and safety [@shi2008potentially]. Occurrences similar to this, wherein individuals are affected due to a collective polluting effort have become commonplace around the world regardless of socioeconomic status. The prominent issue stemming from this is that socioeconomically disadvantaged individuals have a much harder time avoiding the negative effects of pollution. Researchers have argued that through the accumulation of property and governmental influence, privileged Americans have constructed a hierarchy of status based on race and class [@hurley1995environmental]. These barriers to economic ascension have enhanced the issue of ecological deterioration as the disadvantaged become more disadvantaged. 
 
-There are many San Francisco specific issues that arise when looking at urban ecology. The focus of this study tackles the amount of trees in the prominent regions of the city previously mentioned. A study on tree cover across 20 cities in the U.S. demostrated that 17 of these cities had a significant derease in tree cover, indicating not only a decrease in lumber resources for people, but a reduction in biodiversity in these cities as well [@nowak2012tree]. Decreases in tree density in metropolitan areas has been identified as a common occurence worldwide for sometime now, with various researchers arguing different perspectives as to why conservation is important. In this research study, conservation of all trees is important becasue of the benefits that trees provide in terms of air pollution. Furthermore, access to green spaces across the world has become an environmental justice issue. Studies have analyzed the realtionship between green space creation and neighborhood health and have determined that although green spaces are beneficial they can be counterproductive and increase housing costs or property values [@wolch2014urban].    
+There are many San Francisco specific issues that arise when looking at urban ecology. The focus of this study tackles the amount of trees in the prominent regions of the city previously mentioned. A study on tree cover across 20 cities in the U.S. demonstrated that 17 of these cities had a significant decrease in tree cover, indicating not only a decrease in lumber resources for people, but a reduction in biodiversity in these cities as well [@nowak2012tree]. Decreases in tree density in metropolitan areas has been identified as a common occurrence worldwide for sometime now, with various researchers arguing different perspectives as to why conservation is important. In this research study, conservation of all trees is important because of the benefits that trees provide in terms of air pollution. Furthermore, access to green spaces across the world has become an environmental justice issue. Studies have analyzed the relationship between green space creation and neighborhood health and have determined that although green spaces are beneficial they can be counterproductive and increase housing costs or property values [@wolch2014urban].    
 
-To further investigate the relationship between economic status and environmental health, I proposed a study involving the quantification of environmental pollutants in the various governmental departments of San Francisco. In this report, I specifically looked at the emissions of various chemicals, classified as toxic (according to the Agency for Toxic Substances and Disease Registry), and whether these play a role in the decreased presence of green life density in selected areas of San Francisco. Recent studies on the nature of modern urban planning have identified that urban densification processes, like consolidation and infill development, have a large influence in the potential green space available or created later on [@haaland2015challenges]. Based on previous research performed in similar situations, I predicted that areas with a greater density of toxic pollutants will have fewer trees because of the limited ability of plants to establish under harsh (or more toxic) air conditions. To properly assess these questions, I analyzed datasets on housing and demographics found online to identify trends in socioeconomics class in San Francisco. Using this data correlations were found with usages and emissions from the city departments as well as some data collected in the field on waste. This data revealed interesting information about San Francisco such as ....
+To further investigate the relationship between economic status and environmental health, I proposed a study involving the quantification of environmental pollutants in the various governmental departments of San Francisco. In this report, I specifically looked at the emissions of various chemicals, classified as toxic (according to the Agency for Toxic Substances and Disease Registry), and whether these play a role in the decreased presence of green life density in selected areas of San Francisco. Recent studies on the nature of modern urban planning have identified that urban densification processes, like consolidation and infill development, have a large influence in the potential green space available or created later on [@haaland2015challenges]. Based on previous research performed in similar situations, I predicted that areas with a greater density of toxic pollutants will have fewer trees because of the limited ability of plants to establish under harsh (or more toxic) air conditions. To properly assess these questions, I analyzed data sets on housing and demographics found online to identify trends in socioeconomic class in San Francisco. Using this data, correlations were found with usages and emissions from the city departments as well as some data collected in the field on waste, noise, and other types of pollution in the city. This data revealed interesting information about San Francisco such as the evident disparity across communities that are just a few miles apart. Additionally, data revealed the impressive effect that the ecology of a neighborhood plays in day to day live of individuals in metropolitan areas. 
 
 # Methods
 
-Data from this report was colleected from various online databases. 
+Data from this report was collected from various online databases. Data was added into the Rstudio project folder and analyzed using ggplot2 as well as some other packages from Rstudio. 
 
-## Field Methods
+## Field Sampling
 
+To collect data in the field two sites were selected, the Marina and Central Richmond districts. The sampling sites were selected by designating one main street in the district of interest and one perpendicular street. The direction of the perpendicular street was chosen at random via a coin toss. For the coin toss, heads was designated as "right" and tails "left" when facing either north or west. Data was collected at each site on two separate days. At each site data was collected in groups split into cleanliness, cars, noise pollution, and garbage. From these the following protocols were used: 
 
+### Cleanliness
+
+Cleanliness was measured using a scale of 1 to 5, with 5 labeled as perfectly clean. To judge the cleanliness of a neighborhood only areas on the sidewalk and streets were taken into account, any individuals that may be present in areas of data collection were not taken into account on the scale. Data assembly began on one extreme of the main street and judge cleanliness based on scale, afterwords researcher's proceeded to the far end of the perpendicualar street. Finally the opposite extreme of the mainstreet was judged based on the scale. Scale ratings were defined as follows: 
+  (1) Visible litter seen throughout, stagnant water, dead animals or presence of human waste, pronounced unpleasant odors.
+  (2) Animal waste, overall unpleasant smells, 
+  (3) Even distribtion of both clean areas and litter. 
+  (4) Very minimal smell and litter present.
+  (5) No smell, no litter, no biological waste materials,  
+  
+### Cars
+ 
+Two cross streets were used as the area of measurement, counting from both sides of traffic resulting in four total observations. When counting, only cars on the researcher's side of the road were counted in an effort to avoid double counting. Vehicle status was categorized as either parked or driving, from these vehicles were grouped as: cars, public transportation, scooters/motorcycles, or trucks. All this occurred in a 10 minute time span. 
+
+### Noise
+
+Noise pollution was documented using the application NIOSH SLM. When measuring the noise content of a neighborhood, phones were held at arms length to minimize interference from data collector. GPS coordinates were also recorded. Data collection began at one corner of the main street, using NIOSH SLM, data was collected by pointing phone's microphone towards street median. Noise measurements were collected for seven minutes, and was repeated at opposite corner and middle of the main street. These same three measurements were taken on the perpendicular street as well. 
+### Garbage 
+
+Counting began at street corners and area counted included both sidewalk and road. Upon beginning the counting date, time, and location were all documented. To collect data, sampling was done walking along the streets on interest. The group was split in half to facilitate the process, with each taking one side of the street. As the group walked along each piece of trash was recorded along with supporting information (type, size, and area found). Size of debris was measured and labeled as small (1-10cm), medium (10-25cm), or large(25cm or larger) relative to the size of data collection journal. Garbage was categorized as landfill, compost, or recycling. Data collection ended when the group reached the next intersection. 
 
 ## Data Analysis and Statistics
 
@@ -66,24 +89,40 @@ community_data <- read_csv(
 # want to know relationship between the emission of CO2 and the commodity 
 # type
 community_data %>%
-  filter(Sector_GPC == "Stationary") %>%
-  group_by(Commodity_Type) %>%
-  count() %>%
-  arrange(desc(n))
-
-community_data %>%
 group_by(Commodity_Type) %>%
   summarize(mean_emission = mean(Emissions_mtCO2e, na.rm = TRUE)) %>%
   ggplot(aes(x = reorder(Commodity_Type, mean_emission), y = mean_emission)) +
   geom_col(fill = "navy blue", size = 1) +
   coord_flip() +
-  labs( x = "Commodity Type", y = "Mean Emission of CO2") +
-  ggtitle("Commodity Type", "In San Francisco City Government") +
-  theme_grey(base_line_size = 1) +
-  remove(B5)
+  labs( x = "Commodity Type", 
+        y = "Mean Emission of CO2 (metric tons of CO2 emission)") +
+  ggtitle("Emission of CO2 per Commodity Type Usage", 
+          "In San Francisco City Government") +
+  theme_grey(base_line_size = 1)
 
 # still to do: go back and see if you can color parts of each column according 
 # to  
+
+```
+
+**Figure 1:** There is a large difference in the emission of CO2 between the top 10 commodities and the remaining. Gasoline emits almost twice as much as the next closest commodity, solid waste. 
+
+```{r read-in-class-data-sheets}
+car_data <- read_csv(
+  "data/raw_data/Class Data/2020_Spring_Urban_Ecology_Datasheet - cars.csv")
+cleanliness_data <- read_csv("data/raw_data/Class Data/
+  2020_Spring_Urban_Ecology_Datasheet - cleanliness.csv")
+trash_count_data <- read_csv(
+  "data/raw_data/Class Data/2020_Spring_Urban_Ecology_Datasheet - count_trash.csv")
+noise_pollution_data <- read_csv(
+  "data/raw_data/Class Data/2020_Spring_Urban_Ecology_Datasheet - noise.csv")
+```
+
+```{r create-plots-from-class-data}
+# create plots showing the difference between the two areas of SF we went to 
+# collect data from (Marina and Central Richmond). Use this to demonstrate social
+# inequities in ecology throughout the city 
+
 
 ```
 

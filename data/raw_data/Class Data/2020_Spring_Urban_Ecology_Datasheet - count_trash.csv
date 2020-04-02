@@ -1,0 +1,7 @@
+neighborhood,streets,year,month,day,hour_pm,student_names,size_trash,landfill_count,recycle_count,compost_count,notes
+Central Richmond ,Geary & 23rd Avenue,2020,2,24.00,2,Kate Zhou,small,514,56,38,
+Central Richmond ,Geary & 23rd Avenue,2020,2,24.00,3,Maggie Walsh,medium,15,41,13,lots of cigarette butts!
+Central Richmond ,Geary & 23rd Avenue,2020,2,24.00,4,Eddie Muaddi,large,9,20,1,mostly cigarettes
+Marina ,Filmore & North Point,2020,3,2.00,2 hrs,Kate Zhou,small,481,53,18,
+Marina ,Filmore & North Point,2020,3,2.00,3 hrs,Maggie Walsh,medium,10,17,10,
+Marina ,Filmore & North Point,2020,3,2.00,,,large,7,5,2,

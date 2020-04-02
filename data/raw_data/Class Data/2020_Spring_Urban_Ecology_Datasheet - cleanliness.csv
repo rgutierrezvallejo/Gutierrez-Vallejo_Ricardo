@@ -1,0 +1,3 @@
+neighborhood,streets,month,day,year,time,observer,longitude_degrees,longtitude_minutes,longitude_seconds,latitude_degrees,latitude_minutes,latitude_seconds,elevation_m,temp_f,wind_speed_mph,cleanliness_1,cleanliness_2,cleanliness_3,smell_1,smell_2,smell_3,notes
+Central Richmond,Geary and 23rd,2,24,2020,2:00 PM,ricky_kris_cassidy,122,28,57,37,46,49,41.8,62,9,4,3,5,No,No,No,
+Marina,Filmore & North Point,3,2,2020,1:50 PM,ricky_kris_cassidy,122,26,13,37,48,13,7.7,66,15,5,5,5,No,No,No,

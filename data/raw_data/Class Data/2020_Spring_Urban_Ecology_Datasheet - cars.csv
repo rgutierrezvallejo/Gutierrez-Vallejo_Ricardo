@@ -1,0 +1,13 @@
+neighborhood,neighborhood_street,longitude_degrees,longtitude_minutes,longitude_seconds,latitude_degrees,latitude_minutes,latitude_seconds,month,day,year,vehicle_status,cars,buses_or_muni,motorcycles_or_scooters,trucks,duration_of_observation_time_min,observer_names,time_of_day_of_observation,notes
+Central Richmond,N Geary and 23rd,37,46,49,122,28,57,2,24,2020,parked,18,0,0,0,10,"Brandon, Aaron, Karishma, Evangelina ",2:05:00 PM,should be averaged with the others on this street
+Central Richmond,N Geary and 23rd,37,46,49,122,28,57,2,24,2020,driving,161,11,0,4,10,"Brandon, Aaron, Karishma, Evangelina ",2:05:00 PM,should be averaged with the others on this street
+Central Richmond,S Geary and 23rd,37,46,49,122,28,55,2,24,2020,parked,18,0,0,1,10,"Brandon, Aaron, Karishma, Evangelina ",2:20:00 PM,should be averaged with the others on this street
+Central Richmond,S Geary and 23rd,37,46,49,122,28,55,2,24,2020,driving,199,7,3,10,10,"Brandon, Aaron, Karishma, Evangelina ",2:20:00 PM,should be averaged with the others on this street
+Central Richmond,W Geary and 23rd,37,46,45,122,28,57,2,24,2020,parked,30,0,3,0,10,"Brandon, Aaron, Karishma, Evangelina ",2:35:00 PM,the side street
+Central Richmond,W Geary and 23rd,37,46,45,122,28,57,2,24,2020,driving,14,0,0,1,10,"Brandon, Aaron, Karishma, Evangelina ",2:35:00 PM,the side street
+Marina,S Fillmore and North Point,37,48,13,122,26,13,3,2,2020,parked,23,0,1,0,10,"Brandon, Aaron, Karishma, Evangelina ",1:53:00 PM,median on street
+Marina,S Fillmore and North Point,37,48,13,122,26,13,3,2,2020,driving,17,4,0,2,10,"Brandon, Aaron, Karishma, Evangelina ",1:53:00 PM,median on street
+Marina,N Fillmore and North Point,37,48,13,122,26,13,3,2,2020,parked,16,0,1,0,10,"Brandon, Aaron, Karishma, Evangelina ",2:05:00 PM,median on street
+Marina,N Fillmore and North Point,37,48,13,122,26,13,3,2,2020,driving,14,3,1,0,10,"Brandon, Aaron, Karishma, Evangelina ",2:05:00 PM,median on street
+Marina,SE Fillmore and North Point,37,48,14,122,26,7,3,2,2020,parked,20,0,1,0,10,"Brandon, Aaron, Karishma, Evangelina ",2:17:00 PM,the side street
+Marina,SE Fillmore and North Point,37,48,14,122,26,7,3,2,2020,driving,8,0,1,1,10,"Brandon, Aaron, Karishma, Evangelina ",2:17:00 PM,the side street
