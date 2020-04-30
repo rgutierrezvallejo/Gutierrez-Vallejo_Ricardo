@@ -1,7 +1,19 @@
-neighborhood,streets,year,month,day,hour_pm,student_names,size_trash,landfill_count,recycle_count,compost_count,notes
-Central Richmond ,Geary & 23rd Avenue,2020,2,24.00,2,Kate Zhou,small,514,56,38,
-Central Richmond ,Geary & 23rd Avenue,2020,2,24.00,3,Maggie Walsh,medium,15,41,13,lots of cigarette butts!
-Central Richmond ,Geary & 23rd Avenue,2020,2,24.00,4,Eddie Muaddi,large,9,20,1,mostly cigarettes
-Marina ,Filmore & North Point,2020,3,2.00,2 hrs,Kate Zhou,small,481,53,18,
-Marina ,Filmore & North Point,2020,3,2.00,3 hrs,Maggie Walsh,medium,10,17,10,
-Marina ,Filmore & North Point,2020,3,2.00,,,large,7,5,2,
+neighborhood,streets,year,month,day,hour_pm,student_names,size_trash,item_type,counts
+Central Richmond ,Geary & 23rd Avenue,2020,2,24,2,Kate Zhou,small,landfill,514
+Central Richmond ,Geary & 23rd Avenue,2020,2,24,3,Maggie Walsh,medium,landfill,15
+Central Richmond ,Geary & 23rd Avenue,2020,2,24,4,Eddie Muaddi,large,landfill,9
+Central Richmond ,Geary & 23rd Avenue,2020,2,24,2,Kate Zhou,small,recycle,56
+Central Richmond ,Geary & 23rd Avenue,2020,2,24,3,Maggie Walsh,medium,recycle,41
+Central Richmond ,Geary & 23rd Avenue,2020,2,24,4,Eddie Muaddi,large,recycle,20
+Central Richmond ,Geary & 23rd Avenue,2020,2,24,2,Kate Zhou,small,compost,38
+Central Richmond ,Geary & 23rd Avenue,2020,2,24,3,Maggie Walsh,medium,compost,13
+Central Richmond ,Geary & 23rd Avenue,2020,2,24,4,Eddie Muaddi,large,compost,1
+Marina ,Filmore & North Point,2020,3,2,2 hrs,Kate Zhou,small,landfill,481
+Marina ,Filmore & North Point,2020,3,2,3 hrs,Maggie Walsh,medium,landfill,10
+Marina ,Filmore & North Point,2020,3,2,,,large,landfill,7
+Marina ,Filmore & North Point,2020,3,2,2 hrs,Kate Zhou,small,recycle,53
+Marina ,Filmore & North Point,2020,3,2,3 hrs,Maggie Walsh,medium,recycle,17
+Marina ,Filmore & North Point,2020,3,2,,,large,recycle,5
+Marina ,Filmore & North Point,2020,3,2,2 hrs,Kate Zhou,small,compost,18
+Marina ,Filmore & North Point,2020,3,2,3 hrs,Maggie Walsh,medium,compost,10
+Marina ,Filmore & North Point,2020,3,2,,,large,compost,2
