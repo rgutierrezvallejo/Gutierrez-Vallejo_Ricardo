@@ -1,5 +1,5 @@
 ---
-title: "Urban Planning and Ecology: The health outcomes of poor urban planning"
+title: "Urban Planning and Ecology: The outcomes of poor urban planning"
 author: "Ricardo Gutierrez-Vallejo"
 date: "February 10, 2020"
 bibliography: references.bib
