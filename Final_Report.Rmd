@@ -199,7 +199,7 @@ dpw_maintained <- street_tree_data %>%
   filter(qLegalStatus %in% c("DPW Maintained", "Significant Tree"))
 
 ggmap(sf_map) +
-  geom_density2d(data = DPW_maintained,
+  geom_density2d(data = dpw_maintained,
                  aes(x = Longitude,
                  y = Latitude), color = "red") +
   facet_wrap(~ qLegalStatus) +
