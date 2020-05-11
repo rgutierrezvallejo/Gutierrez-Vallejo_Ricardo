@@ -84,9 +84,11 @@ Analysis of community resilience data set compared the average annual PM2.5 conc
 
 # Discussion
 
-Field data on the Marina and Central Richmond neighborhoods revealed interesting relationships and comparisons. The first such, there is a slight difference between the absolute cleanliness and pollution between both of these neighborhoods (Table 1). The Marina received perfect scores. When the trash count data (Figure 1) is taken into account the superficial findings of the cleanliness data are confirmed. Central Richmond had greater amounts of trash among all three classifications of size and type of trash. The trash count and cleanliness scores for the Marina seem to counter one another, this may be because cleanliness was judged on three set locations, while trash count as a continuous measure of the entire intersection of interest. Landfill and small size-trash were the most common type of trash encountered indicating that pollution is minimal, but trash presence is due to the random pedestrian waste.  
+Research on data sets and field data was done on the Marina and Richmond districts of San Francisco. Initially, the intention was to discover a correlation between tree density and pollution of toxics, measured via PM2.5. By demonstrating incidences or locations of high concentrations of toxins, urban planners can adjust community structures to improve overall health of the region. Additionally, data on community-wide pollution can help determine at risk communities for cardiac or respiratory diseases. Data indicated that there were some strong correlations among select variables differentiating the two regions. 
 
-Further, noise pollution data (Figure 2) elaborated on the trends seen among the trash and cleanliness data. The range of noise in the Central Richmond (shown as Geary & 23rd Avenue on the plot) is much wider than the Marina (shown as Fillmore & North Point on the plot) range. The Central Richmond also presents two outlier records with a maximum level dB less than 75 and less than 80, these two points could potentially be attributed to the time of day at which data was recorded. This neighborhood tends to be quieter from the hours of 12 PM-3 PM. The data revealed a strong positive correlation among the equivalent continuous sound level and the maximum level sound with a p-value < 0.01.
+Field data on the Marina and Central Richmond neighborhoods revealed interesting relationships and comparisons. The first such, there is a slight difference between the absolute cleanliness and pollution between both of these neighborhoods (Table 1). The Marina received perfect scores. When the trash count data (Figure 1) is taken into account the superficial findings of the cleanliness data are confirmed. Central Richmond had greater amounts of trash among all three classifications of size and type of trash. The trash count and cleanliness scores for the Marina seem to counter one another, this may be because cleanliness was judged on three set locations, while trash count as a continuous measure of the entire intersection of interest. Landfill and small size-trash were the most common type of trash encountered indicating that pollution is minimal, but trash presence maybe due to the random pedestrian waste. Overall both the Marina and Richmond districts had relatively moderate to high levels of cleanliness which could indicate a high level of city cleaning or high levels of citizen involvement. 
+
+Further, noise pollution data (Figure 2) elaborated on the trends seen among the trash and cleanliness data. The range of noise in the Central Richmond (shown as Geary & 23rd Avenue on the plot) is much wider than the Marina (shown as Fillmore & North Point on the plot) range. The Central Richmond also presents two outlier records with a maximum level dB less than 75 and less than 80, these two points could potentially be attributed to the time of day at which data was recorded. This neighborhood tends to be quieter from the hours of 12 PM-3 PM. Typically residents are at work or school during these hours, resulting in lower foot and vehicle traffic. The data revealed a strong positive correlation among the equivalent continuous sound level and the maximum level sound with a p-value < 0.01, suggesting that there is a correlated difference among the two neighborhoods. 
 
 Information regarding tree density reveals that there is a higher significant-tree density towards downtown and south San Francisco resulting in lower density in the Richmond and Sunset neighborhoods. This proves to be an example of well thought out urban planning, by concentrating significant-tree density in an area with high population density the increasing levels of carbon in urban settings can be reduced [@nowak1993atmospheric]. Regions of the city that tend to be more residential and less urban have fewer significant trees. The reasons for this could range from lack of funding in Public Works, or because these residential areas do not produce a high carbon footprint, or potentially because of increasing rural-urban migration. Studies have discovered that movement of millions of citizens, from rural to urban areas, can produce an additional 1 gigaton of the carbon footprint for a country [@feng2016carbon].   
 
@@ -94,9 +96,9 @@ Greenhouse data reporting emission from the community and the municipality revea
 
 Research has found that tree canopy, specifically in urban forests, is related to carbon presence within the area [@nowak2002carbon]. Data on the percent tree cover of the city and the particulate matter (PM2.5) demonstrated a relationship among tree cover and the toxics within a relative area of San Francisco. The number of facilities that could potentially lead to a risk of contamination was extremely low throughout all neighborhoods, with only Treasure Island demonstrating a substantial risk of contamination relative to other neighborhoods. The negative correlation in this data set is interesting considering researchers have found that tree density can serve to increase the concentration of PM2.5 within certain urban street canyons [@jin2014evaluation], while other papers claim that tree density can serve to decrease the PM2.5 [@nowak2013modeled]. These findings should be worrying to the population given that PM2.5 is strongly associated with visibility and health effects [@pui2014pm2]. 
 
-Research was performed to discover a relationship between the neighborhood of San Francisco and the pollution in the general area relative to the availability of trees. The role of urban planning has greatly influenced metropolitan cities throughout the country and in the case of this study, San Francisco. The initial prediction was that there was a direct correlation among the density of plants found relative to the neighborhood of San Francisco under consideration, but due to the limited amount of data available on location of trees and pollution hot spots, no definitive claim can be made on the relationship among tree density and pollution concentration. According to the data, there is a definite difference in pollution and tree density among neighborhoods in the city, but more research is required to reach a conclusion. Urban planning and ecology can collectively improve the environmental health of a community, but further work is needed to determine the what factors have the larget influence over ecological health in urban systems. 
+Research was performed to discover a relationship between the neighborhood of San Francisco and the pollution in the general area relative to the availability of trees. The role of urban planning has greatly influenced metropolitan cities throughout the country and in the case of this study, San Francisco. The initial prediction was that there was a direct correlation among the density of plants found relative to the neighborhood of San Francisco under consideration, but due to the limited amount of data available on location of trees and pollution hot spots, no definitive claim can be made on the relationship among tree density and pollution concentration. According to the data, there is a definite difference in pollution and tree density among neighborhoods in the city, but more research is required to reach a conclusion. Urban planning and ecology can collectively improve the environmental health of a community, but further work is needed to determine the what factors have the larger influence over ecological health in urban systems. Specifically, research must delve into the importance of tree and plant density in regions with high contamination risks to deter the negative consequences of pollution. Metropolitan cities around the country must follow San Francisco's example and continue to reduce the amount of pollution from both the community and municipality, and urban planning can serve as the platform through which this occurs. 
 
-# Figures
+# Figures and Tables 
 
 ```{r load-packages}
 # If you add any additional packages here, make sure they are
@@ -190,10 +192,10 @@ street_tree_data <- read_csv("data/raw_data/Street_Tree_Map_corrected.csv")
 
 ```{r create-density-map-usintastreet-tree-daat}
 # create a denisty map of street trees maintained by DPW to demonstrate trends 
-# among neighborhoods in San Francisco 
-sf_map <- ggmap::get_map(c(-122.449, 37.778), 
-                         zoom = 12,
-                         maptype = "watercolor")
+# among neighborhoods in San Francisco, save map file and load in to avoid
+# API-related errors 
+
+load("data/sf_map.rda")
 
 DPW_maintained <- street_tree_data %>%
   filter(qLegalStatus %in% c("DPW Maintained","Significant Tree"))
@@ -232,7 +234,7 @@ community_data %>%
   labs(x = "Sector", y = "Commodity Info") +
   ggtitle("Commodity Usage by Sector", 
           "Measured in Metric Tons of Mean CO2 Emission") +
-  theme_grey(base_size = 8)
+  theme_grey(base_size = 6)
 ```
 
 **Figure 4:** There is a large difference in the emission of CO2 between the top 10 commodities and the remaining. Gasoline emits almost twice as much as the next closest commodity, solid waste. 
@@ -255,7 +257,7 @@ municipal_data %>%
   labs(x = "Department", y = "Commodity Info") +
   ggtitle("Commodity Usage by Department", 
           "Measured in Metric Tons of Mean CO2 Emission") +
-  theme_grey(base_size = 8)
+  theme_grey(base_size = 6)
 ```
 
 **Figure 5:** Average emission, measured in metric tons of carbon dioxide, from various commodities in the San Francisco Municipality. Unlike the community data, scale of x-axis is much smaller, reaching only 500 metric tons. 
