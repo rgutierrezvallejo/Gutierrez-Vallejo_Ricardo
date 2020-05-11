@@ -115,19 +115,17 @@ library("citr")
 
 ```{r read-in-cleanliness-data}
 # read in data from field on cleanliness of Marina and Central Richmond
-cleanliness_data <- read_csv(
-  "data/raw_data/Class Data/2020_Spring_Urban_Ecology_Datasheet - cleanliness.csv")
+cleanliness_data <- read_csv("data/raw_data/Class Data/cleanliness.csv")
 ```
 
 ```{r create-table-on-neighborhood-cleanliness}
-# create table to display results from cleanliness research to demonstrate 
+# create table to display results from cleanliness research to demonstrate
 # difference in cleanliness among neighborhoods
 cleanliness_data %>%
   filter(longitude_degrees == "122") %>%
   group_by(neighborhood) %>%
-  select(neighborhood,cleanliness_1,cleanliness_2,cleanliness_3) %>%
-  knitr::kable(col.names = c("Neighborhood", "CS 1",
-                             "CS 2", "CS 3"),
+  select(neighborhood, cleanliness_1, cleanliness_2, cleanliness_3) %>%
+  knitr::kable(col.names = c("Neighborhood", "CS 1", "CS 2", "CS 3"),
                align = "lccc")
 ```
 
@@ -136,13 +134,13 @@ cleanliness_data %>%
 ```{r read-in-trash-data-sheets}
 # read in data from field on trash counts of Marina and Central Richmond
 trash_count_data <- read_csv(
-  "data/raw_data/Class Data/2020_Spring_Urban_Ecology_Datasheet - count_trash.csv")
+  "data/raw_data/Class Data/count_trash.csv")
 ```
 
 ```{r create-plots-from-trash-count-data}
-# create plots showing the difference between the two areas of SF we went to 
-# collect data from (Marina and Central Richmond). Use this to demonstrate social
-# inequities in ecology throughout the city 
+# create plots showing the difference between the two areas of SF we went to
+# collect data from (Marina and Central Richmond). Use this to demonstrate
+# social inequities in ecology throughout the city
 trash_count_data %>%
  ggplot(aes(item_type, counts, fill = size_trash)) +
   geom_col(position = "dodge") +
@@ -161,14 +159,14 @@ noise_pollution_data <- read_csv(
 
 ```{r create-chart-showing-differences}
 # show difference in sound level differences between Central Richmond
-# and North Beach 
-ggplot(data = noise_pollution_data, 
+# and North Beach
+ggplot(data = noise_pollution_data,
        mapping = aes(x = maximum_level_db, y = laeq_db)) +
   geom_point(color = "navy blue", size = 3) +
   geom_smooth(method = "lm", color = "black") +
   facet_wrap(~ streets) +
   labs(x = "Maximum Level Db", y = "Equivalent Continuous Sound Level") +
-  coord_flip() 
+  coord_flip()
 ```
 
 **Figure 2:** Difference in noise pollution from two different locations in San Francisco. Notably, the range of sound levels tend to be higher in the Central Richmond area. 
@@ -185,27 +183,27 @@ broom::tidy(noise_regresion) %>%
 **Table 2:** Results from regression analysis on noise pollution in Marina and Central Richmond. Maximum level (dB) has p-value < 0.01.
 
 ```{r street-trees-data-set}
-# read in street tree data retrieved from: 
+# read in street tree data retrieved from:
 # https://data.sfgov.org/City-Infrastructure/Street-Tree-Map/337t-q2b4
 street_tree_data <- read_csv("data/raw_data/Street_Tree_Map_corrected.csv")
 ```
 
 ```{r create-density-map-usintastreet-tree-daat}
-# create a denisty map of street trees maintained by DPW to demonstrate trends 
+# create a denisty map of street trees maintained by DPW to demonstrate trends
 # among neighborhoods in San Francisco, save map file and load in to avoid
-# API-related errors 
+# API-related errors
 
 load("data/sf_map.rda")
 
-DPW_maintained <- street_tree_data %>%
-  filter(qLegalStatus %in% c("DPW Maintained","Significant Tree"))
+dpw_maintained <- street_tree_data %>%
+  filter(qLegalStatus %in% c("DPW Maintained", "Significant Tree"))
 
 ggmap(sf_map) +
   geom_density2d(data = DPW_maintained,
                  aes(x = Longitude,
                  y = Latitude), color = "red") +
   facet_wrap(~ qLegalStatus) +
-  ggtitle("Tree Density across San Francisco", 
+  ggtitle("Tree Density across San Francisco",
           "Of trees maintained by Department of Public Works") +
   labs(x = "Longitude", y = "Latitude") +
   theme_grey(base_size = 9)
@@ -214,25 +212,24 @@ ggmap(sf_map) +
 **Figure 3:** Density maps of significant-trees and other trees maintained by Public Works. The city department makes an effort to single out significant-trees, most of these which are towards downtown, mainly excluding the Sunset and Richmond regions. 
 
 ```{r read-in-community-greenhouse-data}
-# read in community greenhouse data from 
-# https://data.sfgov.org/Energy-and-Environment/San-Francisco-Communitywide-Greenhouse-Gas-Invento/btm4-e4ak
-community_data <- read_csv(
-  "data/raw_data/Greenhouse Gas Data/San_Francisco_Communitywide_Greenhouse_Gas_Inventory.csv")
+# read in community greenhouse data from:
+# https://datasf.org/opendata/
+community_data <- read_csv("data/raw_data/Greenhouse Gas Data/Community.csv")
 ```
 
 ```{r make-scatter-polot-of-community-commodity-and-sector-data}
-# want to know relationship between the commodity type and which sector uses 
-# the specific commodity type, use a scatter plot and add emmision of CO2 
-# using fill = ""
+# want to know relationship between the commodity type and which sector uses
+# the specific commodity type, use a scatter plot and add emmision of CO2
+# using fill
+
 community_data %>%
   group_by(Sector_General, Commodity_Type) %>%
   summarize(mean_emission = mean(Emissions_mtCO2e, na.rm = TRUE)) %>%
   filter(mean_emission > 40) %>%
-  ggplot(aes(x = Sector_General, y = Commodity_Type, 
-             fill = mean_emission)) + 
-  geom_point(shape = 21, size = 3) + 
+  ggplot(aes(x = Sector_General, y = Commodity_Type,
+             fill = mean_emission)) +  geom_point(shape = 21, size = 3) +
   labs(x = "Sector", y = "Commodity Info") +
-  ggtitle("Commodity Usage by Sector", 
+  ggtitle("Commodity Usage by Sector",
           "Measured in Metric Tons of Mean CO2 Emission") +
   theme_grey(base_size = 6)
 ```
@@ -241,21 +238,22 @@ community_data %>%
 
 ```{r read-in-municipal-greenhouse-dataset}
 # read in dataset with greenhouse emissions from municipal works
-# retreived from: https://data.sfgov.org/Energy-and-Environment/San-Francisco-Municipal-Greenhouse-Gas-Inventory/pxac-sadh
-municipal_data <- read_csv("data/raw_data/Greenhouse Gas Data/San_Francisco_Municipal_Greenhouse_Gas_Inventory.csv") 
+# retreived from:
+# https://datasf.org/opendata/
+municipal_data <- read_csv("data/raw_data/Greenhouse Gas Data/Municipal.csv")
 ```
 
 ```{r make-column-chart-of-municipal-commodity-and-emission-data}
-# compare the commodity information to the emission of CO2 among municipal 
+# compare the commodity information to the emission of CO2 among municipal
 # activities in the city of San Francisco
 municipal_data %>%
   group_by(Department, Commodity_Info) %>%
   summarize(mean_emission = mean(Emissions_mtCO2e, na.rm = TRUE)) %>%
   filter(mean_emission > 40) %>%
-  ggplot(aes(x = Department, y = Commodity_Info, fill = mean_emission)) + 
+  ggplot(aes(x = Department, y = Commodity_Info, fill = mean_emission)) +
   geom_point(shape = 21, size = 2.5) + coord_flip() +
   labs(x = "Department", y = "Commodity Info") +
-  ggtitle("Commodity Usage by Department", 
+  ggtitle("Commodity Usage by Department",
           "Measured in Metric Tons of Mean CO2 Emission") +
   theme_grey(base_size = 6)
 ```
@@ -263,19 +261,19 @@ municipal_data %>%
 **Figure 5:** Average emission, measured in metric tons of carbon dioxide, from various commodities in the San Francisco Municipality. Unlike the community data, scale of x-axis is much smaller, reaching only 500 metric tons. 
 
 ```{r read-in-community-resiliance-data}
-# read in neighborhood resiliance from a csv file 
-# retrieved from: https://data.sfgov.org/Health-and-Social-Services/Community-Resiliency-Indicator-System/banc-xdvr
+# read in neighborhood resiliance from a csv file
+# retrieved from: https://datasf.org/opendata/
 community_resiliance <- read_csv(
   "data/raw_data/Community_Resiliency_Indicator_System.csv")
 ```
 
 ```{r create-scatterplot-comparing-tree-cover-and-contamination-risk}
-# create a scatterplot to find relationship between tree cover and PM2.5 
+# create a scatterplot to find relationship between tree cover and PM2.5
 # concentration, use fill = "" to show risk of contamination (Tox_Per)
 community_resiliance %>%
   ggplot(aes(x = Tree_Per, y = PM_Conc, fill = Tox_Per)) +
-  geom_point(shape = 21 , size = 3) +
-  ggtitle("Relationship between PM2.5 and Percent Cover", 
+  geom_point(shape = 21, size = 3) +
+  ggtitle("Relationship between PM2.5 and Percent Cover",
           "In Neighborhoods in San Francisco") +
   labs(x = "Percent Tree Cover", y = "PM 2.5 Concentration") +
   geom_smooth(method = "lm", alpha = 0.4)
@@ -284,10 +282,10 @@ community_resiliance %>%
 **Figure 6:** Negative relationship between the percent tree cover and PM2.5 (p < 0.01). The scale bar also displays the percent of land area, within 0.25 miles, that is at risk of contamination, highest value displayed in light blue is Treasure Island YBI. 
 
 ```{r tree-cover-and-PM2.5-regression}
-# analyzing value of relationship between PM2.5 and tree cover, create 
+# analyzing value of relationship between PM2.5 and tree cover, create
 # a table to show results from regression analysis
-results_from_pm_tree_model <- summary(lm(PM_Conc ~ Tree_Per, 
-                                         data = community_resiliance ))
+results_from_pm_tree_model <- summary(lm(PM_Conc ~ Tree_Per,
+                                         data = community_resiliance))
 
 broom::tidy(results_from_pm_tree_model) %>%
   knitr::kable(col.names = c("Term", "Estimate", "Std. Error", "Statistic",
